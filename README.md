@@ -5,8 +5,15 @@
 
 ![image](images/Kontronik_Bluetooth_Modul.jpg)
 
-The Kontronik ESCs (Kosmik and Jive pro) are utilizing a full duplex 8 bit 115200 1 stop bit no parity 3.3v UART communication.
-The original Kontronik module is built on top of Blue Radios [BR-LE4.0-D2A](https://www.blueradios.com/hardware_LE4.0-D2.htm) bluetooth module. The ESC uses the built in module AT commands to check the presens of the bluetooth module.
+The Bluetooth module is an interface between the ESC and Android or Apple smartphone.
+Since Kontronik stopped to maintain those apps, they're not supported by the latest Android/Iphone versions.
+
+The Kontronik ESCs (Kosmik and Jive pro) are utilizing a full duplex 8 bit 115200 1 stop bit no parity 3.3v UART communication via the JST-ZH1.5 5 pin connector.
+The original Kontronik module is built on top of Blue Radios [BR-LE4.0-D2A](https://www.blueradios.com/hardware_LE4.0-D2.htm) bluetooth module. 
+
+![image](images/bluetooth_interior2.jpg)
+
+The ESC uses the built in module AT commands to check the presens of the bluetooth module.
 Once the module reply to those commands the ESC starts sending data and telemetry.
 
 On the boot phase, the ESC sends 3 AT commands and wait for response from the module.
@@ -47,7 +54,7 @@ Connect the Kontronik serial interface to the board as follows.
 ### Configure the project
 
 Use the command below to configure project using Kconfig menu as showed in the table above.
-The default Kconfig values can be changed such as: EXAMPLE_TASK_STACK_SIZE, EXAMPLE_UART_BAUD_RATE, EXAMPLE_UART_PORT_NUM (Refer to Kconfig file).
+The default Kconfig values can be changed such as: KONTRONIK_UART_BAUD_RATE, KONTRONIK_UART_PORT_NUM (Refer to Kconfig file).
 ```
 idf.py menuconfig
 ```
