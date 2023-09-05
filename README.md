@@ -31,6 +31,7 @@ more information can be found on the AT command documetation by BlueRadios
 * The code for binding is 1234
 * Now you can use the Adroid/Iphone application
 
+
 ### Hardware Required
 
 The code can be run on any development board, that is based on the Espressif ESP32 SoC with classic Bluetooth capabilities. The board can be connected to a computer with a single USB cable for flashing and monitoring.
@@ -73,6 +74,8 @@ for simplicity purposes, there's a precompiled binary file that can be flashed v
 * Click Start and wait for compleation.
 * Recycle the power by disconnection and reconnection the usb cable 
 
+<p align="center"><img src="./images/flashing-tool.png" width="300"><br>
+  <i>esp-flashing-tool</i><br><br></p>
 
 ### Configure the project
 
