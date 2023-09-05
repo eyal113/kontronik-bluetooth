@@ -8,6 +8,8 @@
 The Bluetooth module is an interface between the ESC and Android or Apple smartphone.
 Since Kontronik stopped to maintain those apps, they're not supported by the latest Android/Iphone versions.
 
+
+## Background 
 The Kontronik ESCs (Kosmik and Jive pro) are utilizing a full duplex 8 bit 115200 1 stop bit no parity 3.3v UART communication via the JST-ZH1.5 5 pin connector.
 The original Kontronik module is built on top of Blue Radios [BR-LE4.0-D2A](https://www.blueradios.com/hardware_LE4.0-D2.htm) bluetooth module. 
 
@@ -24,18 +26,10 @@ On the boot phase, the ESC sends 3 AT commands and wait for response from the mo
 
 more information can be found on the AT command documetation by BlueRadios
 
-## How to use
-* Connect the 5-pin JST connector to the ESC
-* power up the ESC
-* Search for KONTRONIKBT bluetooth device on your phone
-* The code for binding is 1234
-* Now you can use the Adroid/Iphone application
-
-
 ### Hardware Required
 
 The code can be run on any development board, that is based on the Espressif ESP32 SoC with classic Bluetooth capabilities. The board can be connected to a computer with a single USB cable for flashing and monitoring.
-In my case I choosed the ESP32 D1 mini board as this was the smallest option.
+I choosed the ESP32 D1 mini board as this was the smallest option.
 
 <p align="center"><img src="./images/esp32-d1-board.png" width="300"><br>
   <i>ESP32 D1 Mini</i><br><br></p>
@@ -76,6 +70,15 @@ for simplicity purposes, there's a precompiled binary file that can be flashed v
 
 <p align="center"><img src="./images/flashing-tool.png" width="300"><br>
   <i>esp-flashing-tool</i><br><br></p>
+
+
+## How to use
+* Connect the 5-pin JST connector to the ESC
+* power up the ESC
+* Search for KONTRONIKBT bluetooth device on your phone
+* The code for binding is 1234
+* Now you can use the Adroid/Iphone application
+
 
 ### Configure the project
 
