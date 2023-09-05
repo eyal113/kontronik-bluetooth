@@ -39,25 +39,40 @@ In my case I choosed the ESP32 D1 mini board as this was the smallest option.
 <p align="center"><img src="./images/esp32-d1-board.png" width="300"><br>
   <i>ESP32 D1 Mini</i><br><br></p>
 
+[Link to Aliexpress](https://www.aliexpress.com/item/1005001621844145.html?spm=a2g0o.order_list.order_list_main.5.f2f71802LvbaSD)
 
 ### Setup the Hardware
 
 Connect the Kontronik serial interface to the board as follows.
 
 ```
-  -----------------------------------------------------------------------------------------
-  | ESP32 chip Interface  | Kconfig Option     | Default ESP Pin      | External UART Pin |
-  | ----------------------|--------------------|----------------------|--------------------
-  | Transmit Data (TxD)   | KONTRONIK_UART_TXD | GPIO16               | RxD               |
-  | Receive Data (RxD)    | KONTRONIK_UART_RXD | GPIO17               | TxD               |
-  | Ground                | n/a                | GND                  | GND               |
-  -----------------------------------------------------------------------------------------
+ --------------------------------------------
+ | Default ESP Pin      | Kontronik Pin     |
+ |----------------------|--------------------
+ | GPIO16 (Rx)          | Tx                |
+ | GPIO17 (Tx)          | Rx                |
+ | GND                  | GND               |
+ --------------------------------------------
 ```
+
+<p align="center"><img src="./images/esp32-d1-pinout.jpeg" width="400"><br>
+  <i>ESP32 Pinout</i><br><br></p>
+
 
 ### ESC Pinout
 
 <p align="center"><img src="./images/esc-pinout.jpg" width="400"><br>
   <i>5 pin JST-ZH1.5mm connector</i><br><br></p>
+
+### Flashing precompiled version
+for simplicity purposes, there's a precompiled binary file that can be flashed very easily.
+
+* Download the esp-flashing-tool from [here](https://www.espressif.com/en/support/download/other-tools)
+* Connect the ESP32 board to your pc with micro usb cable
+* Open the esp-flashing-tool and select the "kontronik-bluetooth-merged-flash.bin" from the bin folder
+* Click Start and wait for compleation.
+* Recycle the power by disconnection and reconnection the usb cable 
+
 
 ### Configure the project
 
