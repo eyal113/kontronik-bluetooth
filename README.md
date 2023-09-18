@@ -59,6 +59,21 @@ Connect the Kontronik serial interface to the board as follows.
 <p align="center"><img src="./images/esc-pinout.jpg" width="400"><br>
   <i>5 pin JST-ZH1.5mm connector</i><br><br></p>
 
+### Wiring
+I used pre-crimped cable that I found on [aliexpress](https://www.aliexpress.com/item/1005004501408268.html?spm=a2g0o.order_list.order_list_main.28.649f1802pr3IIJ) and then the soldering is a quite simple thing.
+<p align="center"><img src="./images/soldering.jpg" width="400"><br>
+  <i>Wiring</i><br><br></p>
+
+
+<p align="center"><img src="./images/inside_the_case.jpg" width="400"><br>
+  <i>Inside the case</i><br><br></p>
+
+### Final Result
+
+I've used an existing design from [thingiverse](https://www.thingiverse.com/thing:6060421) to print a case that fit perfectly to this esp32 board and this is the result.
+<p align="center"><img src="./images/bluetooth_connected.jpg" width="400"><br>
+  <i>3D printed case</i><br><br></p>
+
 ### Flashing precompiled version
 for simplicity purposes, there's a precompiled binary file that can be flashed very easily.
 
