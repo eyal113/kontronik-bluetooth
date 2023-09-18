@@ -65,12 +65,13 @@ I used pre-crimped cable that I found on [aliexpress](https://www.aliexpress.com
   <i>Wiring</i><br><br></p>
 
 
-<p align="center"><img src="./images/inside_the_case.jpg" width="400"><br>
-  <i>Inside the case</i><br><br></p>
-
 ### Final Result
 
 I've used an existing design from [thingiverse](https://www.thingiverse.com/thing:6060421) to print a case that fit perfectly to this esp32 board and this is the result.
+
+<p align="center"><img src="./images/inside_the_case.jpg" width="400"><br>
+  <i>Inside the case</i><br><br></p>
+  
 <p align="center"><img src="./images/bluetooth_connected.jpg" width="400"><br>
   <i>3D printed case</i><br><br></p>
 
